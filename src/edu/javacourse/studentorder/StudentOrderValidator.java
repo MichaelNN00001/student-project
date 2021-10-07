@@ -18,6 +18,7 @@ public class StudentOrderValidator {
         cityRegisterVal = new CityRegisterValidator();
         weddingVal = new WeddingValidator();
         childrenVal = new ChildrenValidator();
+        studentVal = new StudentValidator();
         mailSender = new MailSender();
     }
 
@@ -27,33 +28,35 @@ public class StudentOrderValidator {
     }
 
     public void checkAll() {
-        while (true) {
-            StudentOrder so = readStudentOrder();
-            if (so == null) {
-                break;
-            }
-            AnswerCityRegister cityAnswer = checkCityRegister(so);
-            if (!cityAnswer.success) {
-                break;
-            }
-            AnswerWedding wedAnswer = checkWedding(so);
-            if (!wedAnswer.success) {
-                break;
-            }
-            AnswerChildren childAnswer = checkChildren(so);
-            if (!childAnswer.success) {
-                break;
-            }
-            AnswerStudent studAnswer = checkStudent(so);
-            if (!studAnswer.success) {
-                break;
-            }
-            sendMail(so);
-         }
+        StudentOrder[] soArray = readStudentOrders();
+//        for (int c = 0; c < soArray.length; c++) {
+//            System.out.println();
+//            System.out.println(c+1);
+//            checkOneOrder(soArray[c]);
+//        }
+        for (StudentOrder so: soArray) {
+            System.out.println();
+            //System.out.println(c+1);
+            checkOneOrder(so);
+        }
     }
-    public StudentOrder readStudentOrder() {
-        SaveStudentOrder.buildStudentOrder();
-        return new StudentOrder();
+
+    public StudentOrder[] readStudentOrders() {
+        StudentOrder[] soArray = new StudentOrder[5];
+
+        for (int c = 0; c < soArray.length; c++) {
+            soArray[c] = SaveStudentOrder.buildStudentOrder(c);
+        }
+        return soArray;
+    }
+
+    public void checkOneOrder(StudentOrder so) {
+        AnswerCityRegister cityAnswer = checkCityRegister(so);
+        AnswerWedding wedAnswer = checkWedding(so);
+        AnswerChildren childAnswer = checkChildren(so);
+        AnswerStudent studAnswer = checkStudent(so);
+
+        sendMail(so);
     }
 
     public AnswerCityRegister checkCityRegister(StudentOrder so) {

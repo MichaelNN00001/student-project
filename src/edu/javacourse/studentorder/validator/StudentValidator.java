@@ -10,7 +10,7 @@ public class StudentValidator {
     String password;
 
     public AnswerStudent checkStudent(StudentOrder so) {
-        System.out.println("checkStudent is running: "+ hostName + ", " + login + ", " + password);
+        System.out.println("checkStudent is running: " + hostName + ", " + login + ", " + password);
         return new AnswerStudent();
     }
 }
