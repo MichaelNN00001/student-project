@@ -13,8 +13,18 @@ public class Adult extends Person {
     private String university;
     private String studentId;
 
-    public Adult() {
+//    public Adult() {
+//
+//    }
 
+    public Adult(String surName, String givenName, String patronymic, LocalDate dateOfBirth, String passportSeria, String passportNumber, LocalDate issueDate, String issueDepartment, String university, String studentId) {
+        super(surName, givenName, patronymic, dateOfBirth);
+        this.passportSeria = passportSeria;
+        this.passportNumber = passportNumber;
+        this.issueDate = issueDate;
+        this.issueDepartment = issueDepartment;
+        this.university = university;
+        this.studentId = studentId;
     }
 
     public Adult(String surName, String givenName, String patronymic, LocalDate dateOfBirth) {

@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ddf892a-2662-413e-9c25-c0b15a66ddf8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/CityRegisterCheckerRespons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/exception/CityRegisterException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/validator/CityRegisterChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/validator/FakeCityRegisterChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/validator/RealCityRegisterChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/RegisterOffice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/Street.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/mail/PassportOffice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/student-project/edu/javacourse/studentorder/SaveStudentOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/student-project/edu/javacourse/studentorder/SaveStudentOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/student-project/edu/javacourse/studentorder/StudentOrderValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/student-project/edu/javacourse/studentorder/StudentOrderValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/student-project/edu/javacourse/studentorder/domain/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/student-project/edu/javacourse/studentorder/domain/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/javacourse/studentorder/SaveStudentOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/SaveStudentOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/javacourse/studentorder/StudentOrderValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/StudentOrderValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/Adult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/Adult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/CityRegisterCheckerRespons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/CityRegisterCheckerRespons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/StudentOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/domain/StudentOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/edu/javacourse/studentorder/validator/CityRegisterValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/validator/CityRegisterValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/javacourse/studentorder/validator/FakeCityRegisterChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/javacourse/studentorder/validator/FakeCityRegisterChecker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +48,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="edu.javacourse.studentorder.mail" />
+      <recent name="edu.javacourse.studentorder.domain" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.StudentOrderValidator">
     <configuration name="SaveStudentOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -81,34 +95,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="889" y="376" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1632490374244" />
-    <state x="974" y="264" key="#com.intellij.ide.util.MemberChooser" timestamp="1633699852544">
+    <state x="974" y="264" key="#com.intellij.ide.util.MemberChooser" timestamp="1634044793203">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="974" y="264" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1633699852544" />
+    <state x="974" y="264" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1634044793203" />
+    <state x="1154" y="294" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1634035604893">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1154" y="294" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1634035604893" />
     <state x="920" y="266" key="FileChooserDialogImpl" timestamp="1632490492826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="920" y="266" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1632490492826" />
-    <state width="951" height="230" key="GridCell.Tab.0.bottom" timestamp="1633616223462">
+    <state width="938" height="237" key="GridCell.Tab.0.bottom" timestamp="1634107595253">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="951" height="230" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1633616223462" />
-    <state width="951" height="230" key="GridCell.Tab.0.center" timestamp="1633616223462">
+    <state width="938" height="237" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1634107595253" />
+    <state width="938" height="237" key="GridCell.Tab.0.center" timestamp="1634107595253">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="951" height="230" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1633616223462" />
-    <state width="951" height="230" key="GridCell.Tab.0.left" timestamp="1633616223461">
+    <state width="938" height="237" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1634107595253" />
+    <state width="938" height="237" key="GridCell.Tab.0.left" timestamp="1634107595252">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="951" height="230" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1633616223461" />
-    <state width="951" height="230" key="GridCell.Tab.0.right" timestamp="1633616223462">
+    <state width="938" height="237" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1634107595252" />
+    <state width="938" height="237" key="GridCell.Tab.0.right" timestamp="1634107595253">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="951" height="230" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1633616223462" />
-    <state x="366" y="344" width="581" height="301" key="com.intellij.ide.util.TipDialog" timestamp="1633677179409">
+    <state width="938" height="237" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1634107595253" />
+    <state x="366" y="344" width="581" height="301" key="com.intellij.ide.util.TipDialog" timestamp="1634022295744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="366" y="344" width="581" height="301" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1633677179409" />
+    <state x="366" y="344" width="581" height="301" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1634022295744" />
+    <state x="394" y="145" width="607" height="804" key="find.popup" timestamp="1634038639438">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="394" y="145" width="607" height="804" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1634038639438" />
     <state x="1074" y="242" key="run.anything.popup" timestamp="1633677139596">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
