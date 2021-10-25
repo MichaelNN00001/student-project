@@ -2,7 +2,7 @@ package edu.javacourse.studentorder.validator;
 
 import edu.javacourse.studentorder.domain.Adult;
 import edu.javacourse.studentorder.domain.Child;
-import edu.javacourse.studentorder.domain.CityRegisterCheckerRespons;
+import edu.javacourse.studentorder.domain.register.CityRegisterRespons;
 import edu.javacourse.studentorder.domain.Person;
 import edu.javacourse.studentorder.exception.CityRegisterException;
 
@@ -14,9 +14,9 @@ public class FakeCityRegisterChecker implements CityRegisterChecker {
     private static final String ERROR_1 = "1002";
     private static final String ERROR_2 = "2002";
 
-    public CityRegisterCheckerRespons checkPerson(Person person)
+    public CityRegisterRespons checkPerson(Person person)
             throws CityRegisterException {
-        CityRegisterCheckerRespons res = new CityRegisterCheckerRespons();
+        CityRegisterRespons res = new CityRegisterRespons();
         if (person instanceof Adult) {
             Adult t = (Adult) person;
             String ps = t.getPassportSeria();
