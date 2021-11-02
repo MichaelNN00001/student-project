@@ -26,7 +26,7 @@ public class StudentOrder {
     }
 
     public void setMarriageCertificateId(String marriageCertificateId) {
-        MarriageCertificateId = marriageCertificateId;
+        this.MarriageCertificateId = marriageCertificateId;
     }
 
     public LocalDate getMarriageDate() {
@@ -34,7 +34,7 @@ public class StudentOrder {
     }
 
     public void setMarriageDate(LocalDate marriageDate) {
-        MarriageDate = marriageDate;
+        this.MarriageDate = marriageDate;
     }
 
     public String getMarriageOffice() {
@@ -42,7 +42,7 @@ public class StudentOrder {
     }
 
     public void setMarriageOffice(String marriageOffice) {
-        MarriageOffice = marriageOffice;
+        this.MarriageOffice = marriageOffice;
     }
 
     public Adult getHusband() {
