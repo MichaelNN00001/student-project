@@ -6,7 +6,7 @@ public class RegisterOffice {
     public RegisterOffice(long l, String s, String s1) {
 
     }
-
+// добавление №2
     public String getMarriageOffice() {
         return MarriageOffice;
     }
