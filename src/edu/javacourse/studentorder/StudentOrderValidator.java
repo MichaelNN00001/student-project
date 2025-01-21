@@ -30,7 +30,7 @@ public class StudentOrderValidator {
         StudentOrderValidator sov = new StudentOrderValidator();
         sov.checkAll();
     }
-
+// первое исправление!!!
     public void checkAll() {
         List<StudentOrder> soList = readStudentOrders();
         for (StudentOrder so: soList) {
